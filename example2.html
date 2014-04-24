@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>My site</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="Resource-type" content="Document" />
+
+	
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="example2.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+$(document).ready(function() {
+			var pepe = $.fn.fullpage({
+				slidesColor: ['#ffffff', '#bfbfbf', '#7BAABE', '#5dfcaa', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu'
+			});
+			
+		});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+
+</head>
+<body onLoad="MM_preloadImages('imgs/ps/fb-icon.jpg','imgs/ps/life1.jpg')">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Welcome!</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Me</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">My life</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">More</a></li>
+</ul>
+
+<div class="section " id="section0">
+	<h1>Welcome!	</h1>
+	<p><img src="imgs/aqua.jpg" width="600" height="600" alt="aqua"></p>
+</div>
+<div class="section" id="section1">
+  <div class="slide">
+		<div class="intro">
+			<h1>Me</h1>
+			<p>&nbsp;</p>
+			<p><img src="imgs/ps/potrait.png" alt="potrait" width="552" height="736" class="intro" align="left"></p>
+            <p>
+            <br><br>
+            <br><br>
+            <br><br>
+            姓名：鄭開倫<br><br>
+            身高：182cm<br><br>
+            體重：71KG<br><br>
+            學歷：國立政治大學資訊管理學系<br><br>
+            雙主修數位內容與科技學位學程<br><br>
+            (就讀中)<br><br>
+            <br><br>
+            <br><br>
+            </p>
+        </div>
+		
+	</div>
+    <div class="slide">
+		<div class="intro">
+		  <p>&nbsp;</p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+		  <p>&nbsp;</p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+		  <p>&nbsp;</p>
+		</div>
+	</div>
+</div>
+<div class="section" id="section2">
+	<div class="intro">
+		<h1>My Life</h1>
+		
+		<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imgs/ps/life1.jpg',1)"><img src="imgs/ps/prelife1.jpg" name="Image6" width="1600" height="900" border="0"></a></p>
+	</div>
+</div>
+<div class="section" id="section3">
+	
+		
+		
+	
+	
+  <a href="https://www.facebook.com/profile.php?id=100002229975907" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imgs/ps/icon.jpg',1)"><img src="imgs/ps/preicon.jpg" name="Image5" width="800" height="800" hspace="0" vspace="60" border="0"></a></p>
+
+</div>
+
+
+</body>
+</html>
